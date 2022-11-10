@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<p class="instructions">
+            Daily devotionals, spiritual food for spiritual beings!
+
+We are spiritual beings that need spiritual food for sustenance. To walk in the supernatural we must attend to things that propels us to prayers and the word of God. A few daily devotional are listed below which would be helpful to our Christian faith.
+
+This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success. Joshua 1:8 KJV
+
+Blessed (happy, fortunate, prosperous, and enviable) is the man who walks and lives not in the counsel of the ungodly [following their advice, their plans and purposes], nor stands [submissive and inactive] in the path where sinners walk, nor sits down [to relax and rest] where the scornful [and the mockers] gather. But his delight and desire are in the law of the Lord, and on His law (the precepts, the instructions, the teachings of God) he habitually meditates (ponders and studies) by day and by night. Psalms 1:1,2 AMPC
+
+Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. With my whole heart have I sought thee: O let me not wander from thy commandments. Thy word have I hid in mine heart, that I might not sin against thee. Blessed art thou, O Lord: teach me thy statutes. With my lips have I declared all the judgments of thy mouth. I have rejoiced in the way of thy testimonies, as much as in all riches. I will meditate in thy precepts, and have respect unto thy ways. I will delight myself in thy statutes: I will not forget thy word. Psalm 119:9-16 KJV
+
+Thy word is a lamp unto my feet, and a light unto my path. Psalm 119:105 KJV
+
+Daily devotionals
+
+1. Daily Fire - Reinhard Bonnke
+
+2. My utmost for His Highest - Oswald Chambers https://utmost.org/
+
+3. Chequebook of Faith - Charles Spurgeon https://www.crosswalk.com/devotionals/faithcheckbook/archives.html
+
+4. Faith Food devotions - Kenneth Hagin https://www.crosswalk.com/devotionals/faithcheckbook/archives.html
+
+5. Declaring God's Word - Derek Prince https://www.derekprince.com/devotions
+
+
+daily-devotionals
+meta - Daily devotionals - Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. Psalm 119:9 KJV
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
